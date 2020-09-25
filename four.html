@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Four</title>
+	<!--Making Elements Draggable-->
+</head>
+<body>
+
+	<table>
+		<tr>
+			<td>
+				<div id="box" ondrop="drop(event)" ondragover="allowDrop(event)" style="width: 350px; height: 150px; border: 1px solid black;">
+			</td>
+			<td>
+				<img id="image" src="./files/image.png" draggable="true" ondragstart="drag(event)" width="350" height="150" alt="img">
+			</td>
+		</tr>
+	</table>
+
+		
+	</div>
+
+
+</body>
+	<script type="text/javascript">
+		function allowDrop(ev){
+			ev.preventDefault();
+		}
+		function Drag(ev){
+			ev.dataTransfer.setData("text", ev.target.id);
+		}
+		function Drop(ev){
+			ev.preventDefault();
+			var data = ev.dataTransfer.getData(document.getElementById(data));
+		}
+	</script>
+</html>
