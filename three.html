@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Three</title>
+	<!--html5 storage-->
+	<style type="text/css">
+		span{
+			background-color: #eeeeee;
+			border: 1px solid #C2C2C2;
+			padding: 4px 6px 4px 6px;
+			border-radius: 0.3em;
+		}
+	</style>
+</head>
+<body>
+	<h2>HTML5 Web Storage</h2>
+	<p>Html5 web storage, websites can store data on a users local computer<br>before Html5 javascript cookies are used to store data</p>
+
+	<h4>Two Type of web storage</h4>
+	<ul>
+		<li>sessionStorage() : <u>Destroyed when browser closed</u></li>
+		<li>localStorage() : <u>Stored locally no expire date</u></li>
+		<br>
+		<li>Data is stored as <span>key</span>/<span>value</span>pair</li>
+		<br>
+		<li>
+			localStorage.setItem("key","value1");
+		</li>
+		<br>
+		<li>
+			alert(localStorage.getItem("key1"));
+		</li>
+		<br>
+		<li>
+			localStorage.removeItem("key1");
+		</li>
+		<br>
+		<li>
+			Removing all value : localStorage.clear()
+		</li>
+		<br>	
+		<li>For Session Storage : Instead of localStorage, sessionStroage is used</li>		
+	</ul>
+
+	<h4>Example</h4>
+	<ul>
+		<li>
+			localStorage.clear();
+		</li><br>
+		<li>
+			localStorage.setItem("b","a");
+		</li><br>
+		<li>
+			<span>b</span>: is key, 
+			<span>a</span>: is value
+		</li>
+	</ul>
+
+	<h4>Geolocation Api :</h4>
+	<p>It's only accessable once user approves the premission of accessing user location, this can compromise users privacy</p>
+	<ul>
+		<li>
+			navigator.geolocation.getCurrentPosition();
+		</li>
+	</ul>
+
+	<h4>Parameter</h4>
+	<ul>
+		<li>
+			showLocation() : callback method that retrives location information
+		</li>
+		<li>
+			errorHandler() : callback method that is invoked when an error occur is processing the asynchronous call
+		</li>
+		<li>
+			options() : set of option for retriving location
+		</li>
+	</ul>
+</body>
+</html>
