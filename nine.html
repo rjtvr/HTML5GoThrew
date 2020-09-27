@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Nine</title>
+	<!-- 
+		new search input type can be used to create a search box: 
+		set a name for your input; otherwise, nothing will be submitted.
+	-->
+</head>
+<body>
+	<form>
+		<input id="mysearch" name="searchitem" type="search" />
+	</form>
+	<br>
+	<br>
+	<form>
+		<input id="car" type="text" list="colors" />
+		<datalist id="colors">
+		    <option value="Red">
+		    <option value="Green">
+		    <option value="Yellow">
+		</datalist>
+	</form>
+	<br>
+	<br>
+	<form>
+		<!-- new types make it easier to structure and validate HTML forms -->
+		<input id="email" name="email" type="email" placeholder="example@example.com" />
+		<br/><br/>
+		<input id="url" name="url" type="url" placeholder="example.com" />
+		<br/>
+		<input id="tel" name="tel" type="tel" placeholder="555.555.1211" />
+	</form>
+</body>
+</html>
